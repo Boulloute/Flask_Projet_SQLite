@@ -38,7 +38,15 @@ def authentification():
             return render_template('formulaire_authentification.html', error=True)
 
     return render_template('formulaire_authentification.html', error=False)
-
+@app.route('/livres/')
+def ReadBDD2():
+    conn = sqlite3.connect('database2.db')
+    cursor = conn.cursor()
+    cursor.execute('SELECT * FROM Livres;')
+    data = cursor.fetchall()
+    conn.close()
+    return render_template('read_data2.html', data=data)
+    
 @app.route('/fiche_client/<int:post_id>')
 def Readfiche(post_id):
     conn = sqlite3.connect('database.db')
