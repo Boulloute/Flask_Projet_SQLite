@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Bibliothèque</title>
+</head>
+<body>
+    <h1>Bienvenue sur l'application de gestion de bibliothèque</h1>
+    <p>Votre projet consiste à concevoir et développer une application de gestion de bibliothèque moderne qui simplifie le processus de prêt et de retour de livres.</p>
+    <p>Les fonctionnalités attendues dans le cadre de ce projet sont les suivantes :</p>
+    <ul>
+        <li>L’enregistrement et la suppression de livres.</li>
+        <li>La recherche de livres disponibles.</li>
+        <li>L'emprunt possible d'un livre par un utilisateur.</li>
+        <li>La gestion des utilisateurs.</li>
+        <li>La gestion des stocks.</li>
+    </ul>
+    <p>Votre travail est de modifier votre code afin de répondre aux besoins définis ci-dessus. L'application exploitera des API pour interagir avec la base de données et un contrôle d'accès Utilisateur/Administrateur doit être mis en place.</p>
+    <p>L’application pourra être enrichie avec des fonctionnalités supplémentaires telles que des recommandations de livres, des notifications pour les retours en retard, ou encore des rapports statistiques sur l'utilisation des livres pour améliorer l'expérience utilisateur et la gestion de la bibliothèque.</p>
+    <p>Pour commencer, vous pouvez :</p>
+    <ul>
+        <li><a href="/enregistrer_livre">Enregistrer un nouveau livre</a></li>
+        <li><a href="/rechercher_livre">Rechercher des livres disponibles</a></li>
+        <li><a href="/emprunter_livre">Emprunter un livre</a></li>
+        <li><a href="/gerer_utilisateurs">Gérer les utilisateurs</a></li>
+        <li><a href="/gerer_stocks">Gérer les stocks</a></li>
+    </ul>
+</body>
+</html>
