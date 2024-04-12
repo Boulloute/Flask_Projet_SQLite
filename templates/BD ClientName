@@ -5,8 +5,8 @@ from urllib.request import urlopen
 from werkzeug.utils import secure_filename
 import sqlite3 
 
-@app.route('/fiche_client/<str:Nom>')
-def Readfiche(Nom):
+@app.route('/fiche_nom/<str:Nom>')
+def Readfiche(post_id):
     conn = sqlite3.connect('database.db')
     cursor = conn.cursor()
     cursor.execute('SELECT * FROM clients WHERE id = ?', (post_id,))
